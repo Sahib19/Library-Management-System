@@ -1,0 +1,249 @@
+body{
+    background-color: bisque;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+
+#header
+{
+    background-color:#5363b4;
+    height: 70px;
+    width: 100vw;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+.logo-title
+{
+    font-size:30px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-title .logo
+{
+    height: 70px;
+    width: 70px;
+    margin:auto 25px;
+    
+}
+
+
+
+.button-container 
+{
+    
+    padding-right: 80px;
+}
+
+ .button-container button
+{
+    background-color: #b9261e;
+    margin-right: 10px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ .button-container button:hover
+{
+    background-color: rgb(122, 0, 0);
+    
+}
+
+
+/* --------------------------------------------------------------main--------------------------------------------------------------- */
+
+
+#main
+{
+   
+    background-image: url('background.jpg');
+    height: 90vh;
+    width: 100%;
+    background-size: cover; /* This makes sure the image covers the entire area */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-login
+{
+    position: absolute;
+    background-color: rgb(77, 77, 74,0.6);
+    height: fit-content;
+    width: 400px;
+    overflow: hidden;
+    display: none;
+    border: solid 1px rgb(255, 255, 255);
+}
+.admin-login .title
+{
+    font-size: 40px;
+    background-color:#5363b4;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-bottom: solid 1px rgb(255, 255, 255);
+}
+
+.user-login
+{
+    position: absolute;
+    background-color: rgb(77, 77, 74,0.6);
+    height: fit-content;
+    width: 400px;
+    overflow: hidden;
+    display: none;
+    border: solid 1px rgb(255, 255, 255);
+}
+.user-login .title
+{
+    font-size: 40px;
+   
+    background-color:#5363b4;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-bottom: solid 1px rgb(255, 255, 255);
+}
+
+.user-register
+{
+    position: absolute;
+    background-color: rgb(77, 77, 74,0.6);
+    height: fit-content;
+    width: 400px;
+    overflow: hidden;
+    border: solid 1px rgb(255, 255, 255);
+}
+.user-register .title
+{
+    font-size: 40px;
+   background-color:#5363b4;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-bottom: solid 1px rgb(255, 255, 255);
+}
+
+.gender
+{
+    margin-bottom: 20px;
+}
+.gender div
+{
+    display: inline;
+    margin-right: 20px;
+}
+
+.gender select
+{
+    height: 35px;
+    width:257px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: center
+}
+
+
+.input-container 
+{
+    margin: 20px 20px;
+    font-size: 25px;
+}
+
+
+.input-container .input-div
+{
+   
+    margin-bottom: 20px;
+
+}
+
+.input-container .input-div input
+{  
+    width: 98%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.input-container .submit input
+{
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    width: 80px;
+    height: 35px;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.input-container .submit input:hover
+{
+    border: white 2px solid;
+}
+
+
+
+
+
+
+
+#footer {
+    background-color: rgb(61, 61, 61);
+    height:fit-content; /* Adjust height as needed */
+    width: 100%;
+   display: flex;
+    
+    color: white; /* Ensure text contrasts well with background */
+}
+
+#footer div
+{
+    width: 33%;
+    padding: 5px 100px;
+}
+
+.footer-section-about
+{
+
+    line-height: 25px;
+}
+
+.footer-section-links li
+{    
+     margin-bottom: 10px;
+     
+}
+
+
+.footer-section-links a
+{    
+     text-decoration: none;
+     color: white;
+     
+}

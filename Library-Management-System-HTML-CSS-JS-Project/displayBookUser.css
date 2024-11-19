@@ -1,0 +1,231 @@
+body{
+    background-color: bisque;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+
+#header
+{
+    background-color:#5363b4;
+    height: 70px;
+    width: 100vw;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+.logo-title
+{
+    font-size:30px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-title .logo
+{
+    height: 70px;
+    width: 70px;
+    margin:auto 25px;
+    
+}
+
+
+
+.button-container 
+{
+    
+    padding-right: 50px;
+}
+
+#header .button-container button
+{
+    background-color: green;
+    margin-left: 10px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#header .button-container button:hover
+{
+    background-color: rgb(1, 71, 1);
+    
+}
+
+#nav-bar
+{
+    background-color: rgb(45, 45, 45);
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-title
+{
+ font-size: 30px;
+ padding-left: 60px;
+
+}
+
+#nav-bar .button-container button
+{
+    background-color: #b9261e;
+    margin-left: 10px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#nav-bar .button-container button:hover
+{
+    background-color: rgb(122, 0, 0);
+    
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+#main
+{
+    height: 1000px;
+    background-image: url('background2.jpg');
+    background-size: cover; /* This makes sure the image covers the entire area */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#book-table-container
+{
+    
+    overflow-y:scroll;
+    background-color: #5363b4;
+    height: 600px;
+    width: 1200px;
+    margin-top: 20px;
+}
+#book-table
+{
+    
+
+    background-color: rgba(77, 77, 74, 0.6);
+    width: 100%;
+
+   
+}
+table, th ,td {
+    border:1px solid black;
+  border-collapse: collapse;
+  }
+
+
+#book-table th
+{ background-color: rgba(30, 30, 30, 0.6);
+   height: 40px;
+    font-size: 20px;
+}
+#book-table  tr 
+{
+   height: 30px;
+}
+
+#book-table  tr :hover
+{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+    background-color: rgb(61, 61, 61);
+    height:fit-content; /* Adjust height as needed */
+    width: 100%;
+   display: flex;
+    
+    color: white; /* Ensure text contrasts well with background */
+}
+
+#footer div
+{
+    width: 33%;
+    padding: 5px 100px;
+}
+
+.footer-section-about
+{
+
+    line-height: 25px;
+}
+
+.footer-section-links li
+{    
+     margin-bottom: 10px;
+     
+}
+
+
+.footer-section-links a
+{    
+     text-decoration: none;
+     color: white;
+     
+}
+
