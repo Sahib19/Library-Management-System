@@ -1,0 +1,189 @@
+:root {
+    --bg: #0b172a;
+    --panel: rgba(255, 255, 255, 0.1);
+    --card: rgba(255, 255, 255, 0.12);
+    --brand: #5b8def;
+    --brand-strong: #3a6ad6;
+    --text: #f5f7fb;
+    --muted: #c7d3e5;
+    --border: rgba(255, 255, 255, 0.18);
+    --shadow: 0 20px 60px rgba(7, 15, 35, 0.55);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(circle at 20% 20%, #132746 0, #0b172a 50%, #081120 100%);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+#header {
+    background: rgba(9, 19, 35, 0.9);
+    height: 72px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 28px;
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+}
+
+.logo-title {
+    font-size:24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-title .logo {
+    height: 48px;
+    width: 48px;
+    margin: 0;
+}
+
+.logo-title .title1 {
+    color: white;
+    text-decoration: none;
+}
+
+.button-container  {
+    display: flex;
+    gap: 10px;
+}
+
+#header .button-container button {
+    background: linear-gradient(135deg, var(--brand), var(--brand-strong));
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    padding: 0 14px;
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(58, 106, 214, 0.35);
+    transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+#header .button-container button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 36px rgba(58, 106, 214, 0.45);
+}
+
+#nav-bar {
+    background: rgba(255, 255, 255, 0.04);
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    border-bottom: 1px solid var(--border);
+}
+
+.page-title {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#nav-bar .button-container button {
+    background: rgba(255, 255, 255, 0.08);
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    padding: 0 14px;
+    transition: background 120ms ease, transform 120ms ease, box-shadow 120ms ease;
+}
+
+#nav-bar .button-container button:hover {
+    background: linear-gradient(135deg, var(--brand), var(--brand-strong));
+    transform: translateY(-1px);
+    box-shadow: 0 10px 30px rgba(58, 106, 214, 0.25);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#main {
+    min-height: calc(100vh - 190px);
+    background-image: linear-gradient(135deg, rgba(91, 141, 239, 0.12), rgba(11, 23, 42, 0.75)), url('../images/background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 20px 60px;
+}
+
+.dashboard-container {
+    width: min(1200px, 100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.dashboard-container button {
+    cursor: pointer;
+    color:white;
+    background: var(--card);
+    border: 1px solid var(--border);
+    font-size: 17px;
+    border-radius: 16px;
+    padding: 18px;
+    min-height: 180px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 12px;
+    box-shadow: var(--shadow);
+    transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+}
+
+.dashboard-container button:hover {
+    transform: translateY(-3px);
+    border-color: rgba(91, 141, 239, 0.7);
+    box-shadow: 0 18px 40px rgba(58, 106, 214, 0.4);
+}
+
+.dashboard-container button .pic-size {
+   height: 72px;
+   width: 72px;
+}
+
+#footer {
+    background: rgba(9, 19, 35, 0.9);
+    width: 100%;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    color: white;
+    padding: 24px 16px 32px;
+    border-top: 1px solid var(--border);
+}
+
+#footer div {
+    padding: 4px 8px;
+}
+
+.footer-section-about {
+    line-height: 25px;
+}
+
+.footer-section-links li {    
+     margin-bottom: 10px;
+}
+
+.footer-section-links a {    
+     text-decoration: none;
+     color: white;
+}
